@@ -1,5 +1,5 @@
 # Exploring postgresql
-## The Files
+## The CSV Files
 1) game_reviews <br>
 2) game_sales<br>
 3) game_sales_data<br>
