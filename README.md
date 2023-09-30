@@ -33,11 +33,12 @@ AND r.user_score IS NULL
 ```
 
 ## Result
+![2](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/56f89b8f-b7af-4642-812c-489e7c403ba8)
+
 
 # 3) Years that video game critics loved
 
 ## Result
-![2](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/56f89b8f-b7af-4642-812c-489e7c403ba8)
 
 # 4) Was 1982 really that great?
 
