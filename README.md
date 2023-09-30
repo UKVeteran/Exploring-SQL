@@ -37,8 +37,20 @@ AND r.user_score IS NULL
 
 
 # 3) Years that video game critics loved
-
+## SQL Code
+```python
+SELECT g.year,
+        ROUND(AVG(r.critic_score),2) AS avg_critic_score
+FROM game_sales AS g
+INNER JOIN reviews AS r
+ON g.game = r.game
+GROUP BY g.year
+ORDER BY avg_critic_score DESC
+LIMIT 10
+```
 ## Result
+![3](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/2ac73707-51d3-4302-bb59-a0a003b7e09c)
+
 
 # 4) Was 1982 really that great?
 
