@@ -1,1 +1,1 @@
-# Exploring-SQL
+# Exploring postgresql
