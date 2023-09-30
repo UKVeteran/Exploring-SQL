@@ -70,8 +70,21 @@ LIMIT 10
 ![4](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/7cf11834-0434-4c0b-a21a-188082ea8889)
 
 # 5) Years that dropped off the critics' favorites list
+![5a](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/b57bf6c8-8165-4def-8971-e021cb3c5aa7)
 
+## SQL Code
+```python
+SELECT year, 
+        avg_critic_score
+FROM top_critic_years
+EXCEPT 
+SELECT year, 
+        avg_critic_score
+FROM top_critic_years_more_than_four_games
+ORDER BY avg_critic_score DESC
+```
 ## Result
+![5b](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/f0acaf73-2a20-49f1-84f1-af7a9357923b)
 
 # 6) Years video game players loved
 
