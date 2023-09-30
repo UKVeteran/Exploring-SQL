@@ -87,8 +87,21 @@ ORDER BY avg_critic_score DESC
 ![5b](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/f0acaf73-2a20-49f1-84f1-af7a9357923b)
 
 # 6) Years video game players loved
-
+## SQL Code
+```python
+SELECT g.year,
+        ROUND(AVG(r.user_score),2) AS avg_user_score,
+        COUNT(*) AS num_games
+FROM game_sales AS g
+INNER JOIN reviews AS r
+ON g.game = r.game
+GROUP BY g.year
+HAVING COUNT(*) > 4
+ORDER BY avg_user_score DESC
+LIMIT 10
+```
 ## Result
+![6](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/cbb3e0d8-f141-43bc-88f2-333749898622)
 
 # 7) Years that both players and critics loved
 
