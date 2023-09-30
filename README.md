@@ -10,6 +10,13 @@
 
 # 1) The ten best-selling video games
 ![1a](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/312fc574-4625-433b-ba5c-43fe3e1f7e04)
+## SQL Code
+```python
+SELECT *
+FROM game_sales
+ORDER BY games_sold DESC
+LIMIT 10
+```
 
 ## Result
 ![1b](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/2b95e3b1-c476-45f9-a743-d7f7ac08f09c)
