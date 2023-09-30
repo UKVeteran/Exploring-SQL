@@ -118,5 +118,20 @@ USING (year)
 ![7b](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/0a5022d0-31fc-4d0a-a772-d4bd22de8af1)
 
 # 8) Sales in the best video game years
+## SQL Code
+```python
+SELECT year,
+    SUM(games_sold) AS total_games_sold
+FROM game_sales
+WHERE year IN
+    (SELECT year
+    FROM top_critic_years_more_than_four_games
+    INNER JOIN top_user_years_more_than_four_games
+    USING (year))
+GROUP BY year
+ORDER BY total_games_sold DESC
+```
 
 ## Result
+![8](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/faf526ff-cc49-42c6-8411-3a4698569ff9)
+
