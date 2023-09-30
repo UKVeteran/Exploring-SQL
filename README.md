@@ -53,8 +53,21 @@ LIMIT 10
 
 
 # 4) Was 1982 really that great?
-
+## SQL Code
+```python
+SELECT g.year,
+        ROUND(AVG(r.critic_score),2) AS avg_critic_score,
+        COUNT(*) AS num_games
+FROM game_sales AS g
+INNER JOIN reviews AS r
+ON g.game = r.game
+GROUP BY g.year
+HAVING COUNT(*) > 4
+ORDER BY avg_critic_score DESC
+LIMIT 10
+```
 ## Result
+![4](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/7cf11834-0434-4c0b-a21a-188082ea8889)
 
 # 5) Years that dropped off the critics' favorites list
 
