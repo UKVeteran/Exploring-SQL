@@ -8,18 +8,34 @@
 6) top_user_scores_more_than_four_games<br>
 
 
-# The ten best-selling video games
+# 1) The ten best-selling video games
 
-# Missing review scores
+## Result
 
-# Years that video game critics loved
+# 2) Missing review scores
 
-# Was 1982 really that great?
+## Result
 
-# Years that dropped off the critics' favorites list
+# 3) Years that video game critics loved
 
-# Years video game players loved
+## Result
 
-# Years that both players and critics loved
+# 4) Was 1982 really that great?
 
-# Sales in the best video game years
+## Result
+
+# 5) Years that dropped off the critics' favorites list
+
+## Result
+
+# 6) Years video game players loved
+
+## Result
+
+# 7) Years that both players and critics loved
+
+## Result
+
+# 8) Sales in the best video game years
+
+## Result
