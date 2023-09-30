@@ -104,8 +104,18 @@ LIMIT 10
 ![6](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/cbb3e0d8-f141-43bc-88f2-333749898622)
 
 # 7) Years that both players and critics loved
+![7a](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/c934d411-336f-4bdf-8b6a-18b7c25f3af9)
+
+## SQL Code
+```python
+SELECT year
+FROM top_critic_years_more_than_four_games
+INNER JOIN top_user_years_more_than_four_games
+USING (year)
+```
 
 ## Result
+![7b](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/0a5022d0-31fc-4d0a-a772-d4bd22de8af1)
 
 # 8) Sales in the best video game years
 
