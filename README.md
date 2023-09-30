@@ -22,12 +22,22 @@ LIMIT 10
 ![1b](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/2b95e3b1-c476-45f9-a743-d7f7ac08f09c)
 
 # 2) Missing review scores
+## SQL Code
+```python
+SELECT COUNT(*)
+FROM game_sales AS g
+LEFT JOIN reviews AS r
+ON g.game = r.game
+WHERE r.critic_score IS NULL 
+AND r.user_score IS NULL
+```
 
 ## Result
 
 # 3) Years that video game critics loved
 
 ## Result
+![2](https://github.com/UKVeteran/Exploring-postgresql/assets/39216339/56f89b8f-b7af-4642-812c-489e7c403ba8)
 
 # 4) Was 1982 really that great?
 
